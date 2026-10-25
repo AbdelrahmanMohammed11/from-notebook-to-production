@@ -1,0 +1,6 @@
+
+docx2txt
+fastapi
+langchain_community 
+openai
+sentence-transformers

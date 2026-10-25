@@ -1,0 +1,32 @@
+[build-system]
+requires = ["fastapi>=0.157.0"]
+build-backend = uvcorn main:app --reload port=8000
+
+[project]
+name = "Guide to Notebook to Production"
+version = "0.1.0"
+
+description = "A minimal FastAPI/Litestar service that predicts ride duration from trip distance and passenger count."
+readme = "README.md"
+requires-python = "3.12"
+dependencies = [
+docx2txt,
+fastapi,
+langchain_community, 
+openai,
+sentence-transformers
+]
+
+dev = [
+    "pytest",
+]
+
+authors [
+    {
+        "name": "AbdelrahmanMohamedMadkour", 
+        "email":abdelrahmanmohamedmadkour@gmail.com
+    }
+]
+
+[server]
+url = "localhost"
